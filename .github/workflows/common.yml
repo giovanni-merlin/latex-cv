@@ -47,7 +47,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: main
-          path: out/thesis.pdf
+          path: out/main.pdf
 
       - name: Deploy on gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
