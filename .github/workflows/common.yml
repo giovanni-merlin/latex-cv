@@ -34,8 +34,28 @@ jobs:
           TEXINPUTS: ".:./developercv.cls//:"
 
       # Runs a set of commands using the runners shell
-      - name: Upload pdf
+      - name: Upload pdf artifact
         uses: actions/upload-artifact@v4
         with:
           name: pdf
           path: main.pdf
+
+      - name: Copy into folder
+        run: |
+          mkdir out
+          cp ./main.pdf ./out/main.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main
+          path: out/thesis.pdf
+
+      - name: Deploy on gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          CLEAN: true
+          SINGLE_COMMIT: true
+          FOLDER: out
+          GIT_CONFIG_NAME: bhroben
+          GIT_CONFIG_EMAIL: robenbhatti@gmail.com
