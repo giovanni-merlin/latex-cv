@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Roben Bhatti}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large M.Sc Physics of Data Student} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	%\icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{+39 3312116804}\\
+    \icon{MapMarker}{11}{Padua, Italy}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:robenbhatti@gmail.com}{robenbhatti@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/bhroben}{github.com/bhroben}}\\
+    %\icon{LinkedinSquare}{11}{\href{https://www.linkedin.com}{/in/your-personal-url}}\\    
+    
+\end{minipage}
+
+\hfill
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+	24-year-old M.Sc. Physics of Data student with a strong background in Physics, Mathematics, and Statistics. Proficient in Python, R, SQL, and various technologies, including Kafka and PySpark. Passionate about Data Science and Physics, with a keen interest in exploring innovative solutions for challenging problems.\\
+ 
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python, R, SQL, VHDL, Arduino, Latex, Shell, VBA.  
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Docker, Git, Anaconda, Kafka, Spark, Keras, Pytorch, Numpy.
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {8/2024 -- 3/2025}
+		{Data Scientist Intern}
+		{DLR Bremen (DE)}
+            {Bayesian Modelling for Reusable Launch Vehicles}
+	\entry
+        {3/2022 -- 6/2023}
+		{Study Room surveillance}
+		{University of Padua}
+            {Offered assistance, resolved issues, and ensured a conducive environment.}
+		
+	\entry
+		{11/2023}
+		{NOI Hackaton SFSCON Edition}
+		{Bolzano}
+		{Participated in a 24h coding challenge.}
+	
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{10/2022 - 3/2025}
+		{Master Degree in Physics of Data }
+		{University of Padua}
+		{master degree program that merges and innovates the educational offers from Physics and Data Science}
+    \entry
+		{10/2019 - 10/2022}
+		{Bachelor Degree in Astronomy}
+		{University of Padua}
+		{Bachelor program provides solid foundation in physics, mathematics, and statistics.}
+	\entry
+		{9/2014 - 7/2019}
+		{Industrial thermo-technical expert}
+		{ITIS B. Castelli (Brescia)}
+		{Expert in designing, regulating, and controlling heating systems for civil and industrial installations, with strong academic background}
+	
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{}
+		{\href{https://github.com/bhroben/Streaming-processing-of-cosmic-rays-using-drift-tubes-detectors}{Streaming processing of cosmic rays using drift tubes detectors}}
+		{Kafka, PySpark}
+		{
+         Simulate a continuous DAQ stream of real data collected in a particle physics detector and publish the results in a dashboard for live monitoring.}
+    \entry
+		{}
+		{\href{https://github.com/bhroben/Bayesian-Optimization-with-Gaussian-Process}{Bayesian optimization with Gaussian Processes}}
+		{Python,TensorFlow}
+		{%Dummy text 
+       GP implementation to find the minimum of analytical test functions and fine-tune hyperparameters in a CNN. MCMC and point estimation with Maximum Likelihood are explored to find hyper-hyperparameters for the GP kernel}
+    \entry
+        {}
+        {\href{https://github.com/bhroben/DETR-for-recognition-of-real-chess-game}{DETR for recognition of real chess game }}
+        {Pytorch}
+        {%Dummy text 
+       DETR finetuning for recognition of chess pieces and their position on a real board. Conversion of the game state in FEN annotation.}
+    \entry
+		{}
+		{\href{https://github.com/bhroben/Feature-importance-methods-of-simulated-binary-black-holes}{Feature importance methods of simulated binary black holes}}
+		{Python, Machine Learning}
+		{%Dummy text 
+        Determines what features have the highest impact on the evolution of a binary system into a Binary Black Hole using various Machine learning  techniques.}
+	\entry
+		{}
+		{\href{https://github.com/bhroben/Naive-Bayes-multinomial-classifier-for-fake-news-detection}{Naive Bayes multinomial classifier for fake news detection}}
+		{R}
+		{%Dummy text 
+        Accurate and automated identification of fake news sentences using Bayes Theorem.}
+
+\end{entrylist}
+
+%-----------------------
+
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English} - C1, 
+    \textbf{ Italian} - native
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
