@@ -1,6 +1,7 @@
 # latex-cv
 
-This repository contains my CV, designed and compiled in LaTeX. Through a CI/CD pipeline, the LaTeX file is automatically compiled into a PDF and deployed to GitHub Pages, making the latest version of my CV easily accessible.
+This repository contains my CV compiled in LaTeX through a CI/CD pipeline and deployed to GitHub Pages.
+The main reason for this repo is that on Overleaf checking previous versions is a paid feature.
 
 ## Usage
 
