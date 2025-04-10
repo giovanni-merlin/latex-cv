@@ -1,6 +1,6 @@
 # latex-cv
 
-Check the CV [here](https://github.com/bhroben/latex-cv/blob/gh-pages/Bhatti_Roben_CV.pdf)
+Check the CV [here](https://github.com/giovanni-merlin/latex-cv/blob/gh-pages/Giovanni_Merlin_CV.pdf)
 
 This repository contains my CV compiled in LaTeX through a CI/CD pipeline and deployed to GitHub Pages.
 The main reason for this repo is that on Overleaf checking previous versions is a paid feature.
